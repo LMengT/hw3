@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故宫博物院</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .kuang {
+            width: 100px;
+            height: 1500px;
+            color: #fff;
+            background-position: right;
+            background-color: rgb(107, 0, 0);
+            text-align: center;
+            margin-top: auto;
+            position: fixed;
+        }
+        
+        .w {
+            width: 900px;
+            margin: auto;
+        }
+        
+        .header {
+            height: 120px;
+            background: #fff url(header图片.jpg) no-repeat center;
+            text-indent: 1.5em;
+            margin-left: 100px;
+            margin-right: 400px;
+            position: fixed;
+        }
+        
+        .menu {
+            font-family: "华文行楷";
+            width: 1200px;
+            height: 120px;
+            margin: auto;
+        }
+        
+        .menu ul {
+            list-style: none;
+        }
+        
+        .menu ul li {
+            float: left;
+            position: relative;
+        }
+        
+        .menu ul li a,
+        .menu ul li a:visited {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            width: 100px;
+            height: 30px;
+            color: #fff;
+            background: #9e0000;
+            line-height: 30px;
+            font-size: 15px;
+        }
+        
+        .menu ul li ul {
+            display: none;
+        }
+        
+        .menu ul li:hover a {
+            color: rgb(255, 187, 0);
+            background: #bc0000;
+        }
+        
+        .menu ul li:hover ul {
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100px;
+        }
+        
+        .menu ul li:hover ul li a {
+            display: block;
+            background: #9c0000;
+            color: rgb(255, 255, 255);
+        }
+        
+        .menu ul li:hover ul li a:hover {
+            background: #be0000;
+            color: rgb(255, 255, 255);
+        }
+        
+        .image {
+            width: 500px;
+            margin-left: 1000px;
+            float: right;
+        }
+        
+        main {
+            background: rbga(250, 0, 0, 0.4);
+            margin: auto;
+            float: left;
+            color: #fff;
+            position: absolute;
+            background-image: url(body图片.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+            margin-left: 100px;
+        }
+        
+        .p {
+            text-align: center;
+        }
+        
+        .text {
+            width: 700px;
+            position: right;
+            margin-left: 120px;
+            margin-top: 130px;
+        }
+        
+        .two {
+            width: 750px;
+            height: 800px;
+            margin-top: 20px;
+            margin-left: 140px;
+        }
+        
+        .one {
+            width: 750px;
+            height: 800px;
+            margin-top: 2px;
+            margin-left: 140px;
+        }
+        
+        .right {
+            width: 350px;
+            height: 1500px;
+            position: center;
+            margin-top: 20px;
+            margin-left: 150px;
+        }
+        
+        body {
+            color: #fff;
+            position: absolute;
+            background-image: url(body图片.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+            margin: auto;
+        }
+        
+        .footer {
+            height: 120px;
+            background-color: rgb(116, 0, 0);
+            text-indent: 1.5em;
+            margin-left: 100px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header w"><img src="故宫logo.png" height="80px">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">一</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">二</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">三</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">四</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">五</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">六</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">七</a>
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </header>
+
+    <ul class="kuang">
+        <li class="kuang">目录
+            <p><a href="#故宫简介">1.故宫简介</a></p>
+            <p><a href="#建筑">2.建筑</a></p>
+        </li>
+    </ul>
+    <div class="image">
+        <img src="1.jpg" width="400px">
+        <img src="2.jpg" width="400px">
+        <img src="3.jpg" width="400px">
+        <img src="4.jpg" width="400px">
+        <img src="5.jpg" width="400px">
+        <img src="6.jpg" width="400px">
+    </div>
+    <div class="main">
+        <div class="text">
+            <h3 id="故宫简介">故宫简介</h3>
+            <p>北京故宫博物院是一座中国综合性博物馆，也是中国最大的古代文化艺术博物馆、第一批全国爱国主义教育示范基地、世界三大宫殿之一 [1-2] 、全国未成年人思想道德建设工作先进单位 [3] ；其建立于1925年10月10日，位于北京故宫紫禁城内，收藏品包括但不限于明朝、清朝两代皇宫及其收藏。<br> 2018年10月，故宫博物院发布首款主题功能游戏和首张古画主题音乐专辑，拉开“智慧故宫”序幕 [4] ；<br>2019年10月，推出剧集《故宫如梦》，以创新形式讲述年轻工匠蒯祥参与营建紫禁城的过程
+                [5] ；<br>2019年10月，与中国中医科学院签署战略合作协议，双方将共同开展清代宫廷中医药文物的科学研究，揭示其文化内涵，挖掘其科学价值 [6] ；<br>2019年10月19日，V故宫获VR/AR创新金奖 [7] ；<br>2020年3月24日，第十一届中国最佳文化旅游大奖榜单发布，北京故宫博物院荣获“年度最佳文化旅游大奖” [9] ；<br>2021年5月8日，“故宫瑞兽之十全十美脊兽杯”等文化创意产品入选中国百佳文化创意产品 [63] ；
+                <br>2021年11月，“雨中故宫，涓流尽汇”获评2021年度优秀文博社教案例之十佳案例 [66] 。 <br>2021年12月1日，故宫博物院发布公告：由于对广大观众的年票购买热情预估不足，故宫博物院的年票销售系统出现严重问题，正在加紧修复。原计划的故宫2022年年票销售工作紧急停止，恢复销售时间将另行公告。 [54] [58] 据故宫博物院官网消息，故宫博物院将于2022年6月7日起，按照75%限流要求恢复开放。入院观众须持有72小时核酸检测阴性证明，配合测温和健康宝查验。
+                [71]
+            </p>
+        </div>
+        <div class="table">
+            <table class="one">
+                <tr>
+                    <td>中文名</td>
+                    <td>北京故宫博物院</td>
+                </tr>
+                <tr>
+                    <td>外文名</td>
+                    <td>The Palace Museum</td>
+                </tr>
+                <tr>
+                    <td>地理位置</td>
+                    <td>北京市东城区景山前街4号 [38]</td>
+                </tr>
+                <tr>
+                    <td>类 别</td>
+                    <td>古代文化艺术博物馆</td>
+                </tr>
+                <tr>
+                    <td>景点级别</td>
+                    <td>AAAAA级</td>
+                </tr>
+                <tr>
+                    <td>开放时间</td>
+                    <td>
+                        全年 周一 不开放；<br> 4月1日-10月31日 周二至周日 08:30-17:00；<br> 11月1日-次年3月31日 周二至周日 08:30-16:30；<br> 法定节假日周一不闭馆
+                    </td>
+                </tr>
+                <tr>
+                    <td>门票</td>
+                    <td>价格旺季60.00元 淡季40.00元</td>
+                </tr>
+                <tr>
+                    <td>竣工时间</td>
+                    <td>明朝</td>
+                </tr>
+                <tr>
+                    <td>馆藏精品</td>
+                    <td>清明上河图</td>
+                </tr>
+                <tr>
+                    <td>建馆时间</td>
+                    <td>1925年10月10日历经朝代明朝 清朝</td>
+                </tr>
+                <tr>
+                    <td>著名景点</td>
+                    <td>午门,东华门,太和门三大殿</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <h3>目录</h3>
+            <table class="two">
+                <ul>1 历史沿革</ul>
+                <u id="建筑">2 建筑
+                    <li>太和殿 </li>
+                    <li>中和殿</li>
+                    <li>保和殿</li>
+                    <li>养心殿</li>
+                    <li>乾清宫</li>
+                    <li>交泰殿</li>
+                    <li>坤宁宫</li>
+                    <li>文华殿</li>
+                    <li>武英殿</li>
+                    <li>金水桥</li>
+                </u>
+                <ul>3 展览与藏品
+                    <li>古书画</li>
+                    <li>瓷器</li>
+                    <li>铜器</li>
+                    <li>玉器</li>
+                    <li>其他工艺品</li>
+                    <li>黄地蓝寿字纹碗</li>
+                    <li>黄地红蝠金团寿字纹盖碗</li>
+                    <li>黄地粉彩五福捧寿纹奓斗</li>
+                    <li>黄地红蝠金彩团“寿”字渣斗</li>
+                    <li>黄地蓝寿字纹盘</li>
+                    <li>宫廷类文物</li>
+                    <li>档案古籍 </li>
+                </ul>
+                <ul>4 展馆
+                    <li>宫廷原状</li>
+                    <li>书画馆</li>
+                    <li>陶瓷馆</li>
+                    <li>玉器馆</li>
+                    <li>金银器馆</li>
+                    <li>青铜器馆</li>
+                    <li>捐献馆</li>
+                    <li>延禧宫</li>
+                    <li>钟表馆</li>
+                    <li>宁寿宫区</li>
+                    <li>其他展览</li>
+                    <li>特展临展</li>
+                </ul>
+                <ul>5 智慧故宫</ul>
+                <ul>6 参观导览
+                    <li>开放时间</li>
+                    <li>重要须知</li>
+                    <li>交通指南</li>
+                    <li>故宫年票</li>
+                    <li>未成年免费</li>
+                    <li>暂停开放</li>
+                    <li></li>
+                </ul>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>地址</h3>
+        <p>北京</p>
+        <h3>现任院长王旭东官方电话</h3>
+        <p>010-85007938,010-85007421,010-85007058</p>
+    </div>
+</body>
+
+</html>
